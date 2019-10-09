@@ -1,0 +1,387 @@
+
+body, html {
+	width: 100vw;
+  height: 100vh;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+.Page{
+  height: 100%;
+  width: 100%vw;
+  display: flex;
+
+}
+
+hr {
+  width: 40%;
+  background-color: rgb(41, 187, 187);
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(179, 156, 156, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h3{
+  text-align: center;
+}
+
+.about{
+  font-family: Roboto Mono;
+  padding-left:10px;
+}
+.container h3{
+    margin-top: 40px;
+}
+
+.Page .section-1{
+  flex:1;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+.section-1 .profile{
+  margin-top: 5%;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+
+.section-1 .profile img{
+  width: 40px;
+  margin: 0 auto;
+}
+
+.buttons{
+ text-align: center;
+ word-spacing: 25px;
+}
+
+.buttons .btn{
+  background: rgb(101,21,139);
+background: linear-gradient(96deg, rgba(66, 8, 92, 0.282) 0%, rgba(115, 40, 172, 0.908) 0%, rgba(24, 0, 35, 0.475) 100%);
+  border: none;
+  font-size: 17px;
+  text-shadow: 2px 1px black;
+}
+
+button a{
+  color: #FFF;
+}
+
+
+.Page .section-2{
+  flex:1;
+  text-align: center;
+  background-image: url("../templates/city.gif");
+  /* Center and scale the image*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.section-2 .portImg{
+margin-top:100px;
+border-radius: 50%;
+width:35%;
+padding: 5px;
+border: solid rgb(228, 252, 199) 7px;
+}
+
+
+.section-2 .min{
+  margin-top: 40px;
+  color: aliceblue;
+  text-shadow: 2px 2px black;
+  font-size:20px;
+  font-family: Roboto Mono;
+
+}
+
+.section-2 .resptext{
+  display: none;
+}
+
+.section-2 .social{
+  display: none;
+}
+
+/*Tech*/
+.tech{
+  text-align: center;
+}
+
+.container hr{
+  margin-bottom: 40px;
+}
+.group{
+  display: flex;
+  border-radius: 15px;
+  margin: 0px 20px;
+  padding:10px 10px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+.item img{
+width: 70px;
+padding: 5px;
+}
+
+.item{
+  margin-right: 10px;
+}
+
+
+
+
+/*Portfolio*/
+.social-box{
+  margin:0 auto;
+
+}
+
+.social-box .box{
+  background: #FFF;
+  border-radius: 10px;
+  padding: 40px 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 0.6s ease-out;
+  box-shadow: 0 0 6px rgb(198, 213, 234);
+
+}
+
+.social-box .box:hover{
+ box-shadow: 0 0 18px #4183D7;
+ border-radius: 1px;
+}
+
+.social-box .box .box-text{
+  margin:20px 0px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.box-title{
+background-color: rgba(90, 45, 161, 0.1);
+border-radius: 5px;
+
+
+}
+
+
+.social-box .box .box-text p{
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  color: rgb(151, 3, 154)
+}
+
+.social-box .box img{
+  width: 30px;
+}
+
+.social-box .box .box-btn a{
+  text-decoration: none;
+  color: #4183D7;
+  font-size: 16px;
+}
+
+.social-box .box .box-btn{
+  margin-bottom:3px;
+}
+.social-box .box .box-btn a:hover{
+background: rgb(44, 129, 240);
+color: #FFF;
+padding: 5px;
+border-radius: 3px;
+}
+
+.fa{
+   color:#4183D7;
+}
+
+.section-3 .container{
+  margin-top: 40px;
+  text-align: center
+}
+.section-3 .container img{
+  width: 200px;
+  margin-bottom: -5%;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  .Page .section-1 {
+    display: none;
+  }
+
+.section-2 .portImg{
+width: 29%;
+}
+  .section-2 img{
+    margin-top:100px;
+    width:28%;
+    }
+
+    .section-2 .min{
+  display: none;
+    }
+
+    .section-2 .resptext{
+      display: block;
+      margin-top: 60px;
+      color: rgb(226, 231, 212);
+      text-shadow: 2px 2px 2px rgb(5, 38, 138);
+      font-family: Roboto Mono;
+      margin-bottom: -130px;
+      padding-right:15px;
+    }
+
+    .resptext .back{
+      padding-left: 20px;
+    }
+
+
+    .section-2 .social{
+      padding-bottom: 50px;
+      display: block;
+    }
+
+   .social .profile img{
+     margin-top: 150px;
+      width: 40px;
+      border-radius: 10px;
+      word-spacing: 30px;
+    }
+
+
+    .contner{
+      display: none;
+    }
+
+
+}
+
+
+
+
+
+/*Scroll Animation*/
+body {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.contner {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: 85vh;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background:rgb(158, 55, 186);
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 60px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 13px;
+  color: rgb(195, 5, 205);
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 900;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+.bottom-plain{
+  overflow-x: hidden !important;
+}
+
+footer{
+  background: rgba(52, 1, 50, 0.872);
+  height: 40px;
+  overflow-x: hidden !important;
+}
+
+footer h5{
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(169, 190, 218);
+  font-size: 13px;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgb(213, 231, 247)
+}

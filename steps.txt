@@ -1,0 +1,56 @@
+pip3 install virtualenv
+virtualenv .
+source bin/activate
+pip freeze
+pip install django
+Create new folder and open in terminal
+#django-admin.py startproject mysite .
+#python3 manage.py runserver
+#python3 manage.py migrate
+#python3 manage.py migrate go to /admin -url
+#python3 manage.py createsuperuser
+#sudo lsof -t -i tcp:8000 | xargs kill -9
+#python3 manage.py startapp 'new app'(cd into mysite .)
+#add 'new app' to settings.py
+
+#create folder to hold app
+
+#create urls.py file:
+'''
+from . import views
+from django.urls import path
+
+urlpatterns = [
+    path ('', views.home, name = 'home'),
+]
+'''
+
+#Add below to mysite . urls.py file to redirect to mysite urls.py
+'''
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include( 'portf_App.urls')),
+]
+'''
+
+#create templates folder with html file for views
+
+#Create static folder for style.css files
+
+# Add static folder path to settings.py
+STATIC_URL = ...
+
+#use {% load staticfiles %} to load css file
+
+#<div class="container">
+    {% block content%}
+    {% endblock%}
+    </div>
+#
+#
+#{% csrf_token%}<!---this is to prevent hacking the form-->
+#create 'static' folder to hold css
+
